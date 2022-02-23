@@ -1,4 +1,4 @@
-package ss6_ke_thua.thuc_hanh.he_cac_doi_tuong_hinh_hoc.shape;
+package ss6_ke_thua.thuc_hanh.he_cac_doi_tuong_hinh_hoc.square;
 
 public class Shape {
     private String color = "green";
