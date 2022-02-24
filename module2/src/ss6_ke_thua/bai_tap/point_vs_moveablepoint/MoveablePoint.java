@@ -38,8 +38,8 @@ public class MoveablePoint extends Point {
     }
 
     public MoveablePoint move() {
-        float x = xSpeed;
-        float y = ySpeed;
+        setX(getX()+getXSpeed());
+        setY(getY()+getYSpeed());
         return this;
     }
 
