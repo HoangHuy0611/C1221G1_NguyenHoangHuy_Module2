@@ -1,4 +1,6 @@
-package ss6_ke_thua.thuc_hanh.he_cac_doi_tuong_hinh_hoc.square;
+package ss7_abstract_class_va_interface.bai_tap.interface_colorable;
+
+import ss7_abstract_class_va_interface.bai_tap.interface_resizeable.Resizeable;
 
 public class Circle extends Shape  {
     private double radius = 1.0;
@@ -39,3 +41,4 @@ public class Circle extends Shape  {
                 + super.toString();
     }
 }
+

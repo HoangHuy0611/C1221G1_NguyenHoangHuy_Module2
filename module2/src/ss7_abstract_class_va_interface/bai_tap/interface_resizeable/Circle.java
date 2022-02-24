@@ -1,6 +1,6 @@
-package ss6_ke_thua.thuc_hanh.he_cac_doi_tuong_hinh_hoc.square;
+package ss7_abstract_class_va_interface.bai_tap.interface_resizeable;
 
-public class Circle extends Shape  {
+public class Circle extends Shape implements Resizeable {
     private double radius = 1.0;
 
     public Circle() {
@@ -37,5 +37,10 @@ public class Circle extends Shape  {
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        setRadius(getRadius() * percent);
     }
 }
