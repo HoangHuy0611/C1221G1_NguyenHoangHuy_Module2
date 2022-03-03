@@ -1,8 +1,6 @@
 package bai_tap_them_thay_chanh.quan_ly_phuong_tien_giao_thong.models;
 
-import bai_tap_them_thay_chanh.quan_ly_phuong_tien_giao_thong.models.PhuongTienGiaoThong;
-
-public class XeMay extends PhuongTienGiaoThong {
+public class XeMay extends Vehicle{
     private int congSuat;
 
     public XeMay() {
@@ -12,8 +10,8 @@ public class XeMay extends PhuongTienGiaoThong {
         this.congSuat = congSuat;
     }
 
-    public XeMay(String bienKiemSoat, String tenHangSanXuat, String namSanXuat, String chuSoHuu, int congSuat) {
-        super(bienKiemSoat, tenHangSanXuat, namSanXuat, chuSoHuu);
+    public XeMay(String bienKiemSoat, String hangSanXuat, int namSanXuat, String chuSoHuu, int congSuat) {
+        super(bienKiemSoat, hangSanXuat, namSanXuat, chuSoHuu);
         this.congSuat = congSuat;
     }
 
@@ -23,5 +21,12 @@ public class XeMay extends PhuongTienGiaoThong {
 
     public void setCongSuat(int congSuat) {
         this.congSuat = congSuat;
+    }
+
+    @Override
+    public String toString() {
+        return "XeMay{" +
+                "congSuat=" + congSuat +
+                '}'+ super.toString();
     }
 }
