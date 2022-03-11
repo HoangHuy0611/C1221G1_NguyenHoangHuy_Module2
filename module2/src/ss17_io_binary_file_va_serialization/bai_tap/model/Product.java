@@ -1,8 +1,9 @@
 package ss17_io_binary_file_va_serialization.bai_tap.model;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class Product {
+public class Product implements Serializable {
     private int id;
     private String tenSanPham , hangSanXuat;
     private double giaTien;
